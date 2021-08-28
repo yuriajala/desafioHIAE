@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+	<head> 
+		<title> DICOM File Upload </title>
+	</head>
+	<body>
+		<h1> DICOM File Upload </h1>
+		<!-- select file and upload -->
+		<form method="POST" action="" enctype="multipart/form-data">
+			<p><input type="file" name="file"></p>
+			<p><input type="submit" value="Upload"></p>
+		</form>
+		<!-- write output from app.py -->
+		{{ output|safe }}
+		
+	</body>
+</html>
